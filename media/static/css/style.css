@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+
+body {
+
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-bar {
+    width: 100%;
+    overflow: auto;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+.icon-bar a {
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    background-color: #4CAF50;
+}
+
+.number-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-list a {
+    font-size: 15px;
+}
+
+.btn-tel {
+    margin-bottom: 7px;
+}
+
+
+/*=====================================================*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: antiquewhite;
+    display: flex;
+    text-align: center;
+    height: 650px;
+}
+
+.image1 {
+    background-image: url("https://nadra.info/wp-content/uploads/2021/08/UNIGRAN-NADRA-INFO-scaled.jpg");
+}
+
+.image2 {
+    background-image: url("https://bud-kiev.com.ua/wp-content/uploads/2018/01/pesok.jpg");
+}
+
+.image3 {
+    background-image: url("https://ukrstone.org/wp-content/uploads/2012/08/860443_254886814645833_1450049859_o.jpg");
+}
+
+.slide-image {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    text-align: center;
+    width: 100vw;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: green;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: wheat;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+footer {
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.static-root {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*text-align: center;*/
+    margin-top: 150px;
+    flex-direction: column;
+
+}
+
+.static-section-text {
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+    font-size: 1.2em;
+
+}
+
+.static-section {
+    /*width: 150px;*/
+    display: flex;
+    flex-direction: column;
+    /*margin-right: 100px;*/
+    align-items: center;
+
+}
+
+.widget {
+    width: 100%;
+}
+
+.static-section-image {
+    width: 80px;
+
+}
+
+.mainbtn {
+    margin-left: -250px;
+    margin-top: -40px;
+
+}
+
+
+.et_pb_column {
+    display: flex;
+    justify-content: center;
+    background: rgba(18, 164, 18, 0.2);
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.et_pb_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.car {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.ciny {
+    display: flex;
+    justify-content: center;
+}
+
+.txt {
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.listpr {
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 0 20px 20px 0;
+}
+
+.elementor-column {
+    width: 100px;
+
+}
+
+.text {
+    margin-left: 770px;
+}
+
+.dropdown-menu {
+    margin: 20px 900px 0 0;
+}
+
+.qwerty {
+    width: 99%;
+}
+
+
+body img:hover {
+    border-radius: 10px;
+}
+
+.brd-txt {
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+    color: black;
+    position: relative;
+    top: 5px;
+}
+
+
+.price {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+}
+
+.textp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.et_pb_column {
+    background: rgba(18, 164, 18, 0.2);
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.ptp {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .et_pb_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .static-root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-left: 25px;
+    }
+
+    .static-section-text {
+        font-size: 1em;
+    }
+
+    .static-section-image {
+        display: flex;
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .slide-image {
+        display: flex;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .slideshow-container {
+        position: relative;
+        background: antiquewhite;
+        display: flex;
+        text-align: center;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .et_pb_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .static-root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-left: 25px;
+    }
+
+    .static-section-text {
+        font-size: 0.7em;
+    }
+
+    .static-section-image {
+        display: flex;
+        width: 35px;
+        margin-top: -100px;
+    }
+
+    .slide-image {
+        display: flex;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .slideshow-container {
+        position: relative;
+        background: antiquewhite;
+        display: flex;
+        text-align: center;
+        height: 210px;
+    }
+
+    .ciny {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .dot-container {
+        text-align: center;
+        padding: 10px;
+        background: green;
+    }
+
+    .icon-bar {
+        width: 100%;
+        overflow: auto;
+        background-color: #4CAF50;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        align-items: center;
+    }
+
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    brd-txt {
+        display: flex;
+        justify-content: center;
+        overflow-wrap: break-word;
+        color: black;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .price {
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .textp {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .et_pb_column {
+        background: rgba(18, 164, 18, 0.2);
+        padding: 50px 20px;
+        border-radius: 10px;
+    }
+
+    .ptp {
+        font-size: 20px;
+    }
+
+}

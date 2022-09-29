@@ -1,0 +1,20 @@
+{% extends "shop/base.html" %}
+{% load static %}
+<link rel="stylesheet" href="/media/static/css/style.css">
+{% block title %}
+    {% if category %}{{ category.title }}{% else %}Products{% endif %}
+{% endblock %}
+{% block content %}
+        <div class="textp">
+
+    <div class="product-detail">
+    <h3 class="txt">{{ product.name }}</h3>
+        <img class="img" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+    <div class="brd">
+        <h5 class="brd-txt">{{ product.description|linebreaks }}</h5>
+    </div>
+    </div>
+</div>
+    </div>
+
+{% endblock %}

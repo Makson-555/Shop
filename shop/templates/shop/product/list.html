@@ -1,0 +1,53 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Products{% endif %}
+{% endblock %}
+
+{% block content %}
+
+
+    <div id="about" class="et_pb_section">
+        <div class="et_pb_module">
+            <img class="car" src="https://lvivekotrans.com/wp-content/uploads/2020/08/x2-min.png"></img>
+        </div>
+        <div class="et_pb_column">
+            <div class="et_pb_text_inner"><h2>Про нас</h2> <h4> Власний автопарк, великий досвід на ринку постачання
+                сипучих матеріалів.<br>
+                Досвід здобутий за ці роки, допомагає нам швидко і професійно виконувати <br>замовлення
+                будь-якої складності.<br>- Доставка по всій Львівській області та за її межами. <br>- Прямі домовленості
+                з
+                кар'єрами дають можливість пропонувати мінімальні ринкові ціни. <br>- Можливе відтермінування оплати, за
+                домовленістю.
+                <br>- Будь яка форма оплати.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+{% endblock %}
+
+{% block img %}
+    <div class="imgitem">
+        <h2 class="listpr">Список товарів</h2>
+        <h1 class="text">{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
+        <div id="main" class="product-list">
+            {% for product in products %}
+                <div class="item">
+                    <h4 class="txt">{{ product.name }}</h4>
+                    <a href="{{ product.get_absolute_url }}">
+                        <img src="
+                                {% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+                    </a>
+                    <a href="{{ product.get_absolute_url }}"></a><br>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h3 class="ciny">Ціни за індивідуальною домовленістю</h3>
+    <style>
+
+
+    </style>
+{% endblock %}
