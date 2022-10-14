@@ -33,7 +33,7 @@ services:
       - ./web/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./:/home/app/web
     ports:
-      - 1337:80
+      - 80
     depends_on:
       - web
     networks:
