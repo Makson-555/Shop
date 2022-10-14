@@ -29,6 +29,8 @@ services:
 
   nginx:
     build: ./nginx
+    volumes:
+      - .:/famshop
     ports:
       - 1337:80
     depends_on:
