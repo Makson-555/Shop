@@ -29,8 +29,10 @@ services:
 
   nginx:
     build: ./web/nginx
+    volumes:
+      - .:/famshop
     ports:
-      - 80
+      - 80:80
     depends_on:
       - web
     networks:
