@@ -21,7 +21,6 @@ services:
       - '3309:3306'
     environment:
       MYSQL_DATABASE: 'famshop'
-      MYSQL_ROOT: 'root'
       MYSQL_ROOT_PASSWORD: 'root'
     restart: always
     networks:

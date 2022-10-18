@@ -30,10 +30,9 @@ services:
   nginx:
     build: ./web/nginx
     volumes:
-      - ./web/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./:/home/app/web
+      - .:/famshop
     ports:
-      - 80
+      - 80:80
     depends_on:
       - web
     networks:
